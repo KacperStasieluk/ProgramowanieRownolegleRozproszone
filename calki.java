@@ -15,7 +15,7 @@ class Watkowa extends Thread
 
     public void run()
     {
-        wynik = Math.sin(x);
+        wynik = Math.cos(x) - Math.exp(x);
     }
 }
 
@@ -143,8 +143,8 @@ public class calki
         double wynik2 = Simpson.wyliczCalke(0, Math.PI / 2, 555);
         double wynik3 = Trapezy.wyliczCalke(0, Math.PI / 2, 555);
 
-        System.out.println("Metoda prostokątów: "+wynik1);
-        System.out.println("Metoda Simpsona: "+wynik2);
-        System.out.println("Metoda trapezów: "+wynik3);
+        System.out.format("Metoda prostokątów: %.20f%n", wynik1);
+        System.out.format("Metoda Simpsona: %.20f%n", wynik2);
+        System.out.format("Metoda trapezów: %.20f%n", wynik3);
     }
 }
