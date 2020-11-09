@@ -43,8 +43,7 @@ class Zwierze extends Thread {
                     stan = POWROT;
                 } else try {
                     sleep(rand.nextInt(1000));
-                } catch (Exception e) {
-                }
+                } catch (Exception e) {}
             } else if (stan == POWROT) {
                 System.out.println("Pozwolenie o wpuszczenie zwierzęcia numer: " + nr + " ,ilosc jedzenia: " + jedzenie);
                 stan = g.wejdzNaPole();
@@ -86,8 +85,7 @@ class Gospodarstwo {
     synchronized int wejdzNaPole() {
         try {
             Thread.currentThread().sleep(1000);
-        } catch (Exception ie) {
-        }
+        } catch (Exception ie) {}
         if (iloscZajetych < iloscGospodarstw) {
             iloscZajetych++;
             System.out.println("Pozwolenie na wpuszczenie zwierzęcia " + iloscZajetych);
