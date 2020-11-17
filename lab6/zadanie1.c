@@ -16,8 +16,6 @@ int main (int argc, char *argv[])
 
     for (int i = 1; i <= liczbaProcesow; i++)
     {
-        srand(getpid()+getppid());
-        
         double pi = 1.0;
         int N;
         int n = rand()%5000+100;
