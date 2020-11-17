@@ -43,12 +43,12 @@ int main (int argc, char *argv[])
                         xi[i-1] = A + ((i / (double)n) * (B - A));
                     }
 
-                    tab[0]=(4 * pow(A,2) - 6 * A + 5) / 2;
-                    tab[n]=(4 * pow(B,2) - 6 * B + 5) / 2;
+                    tab[0]=(4 * pow(A, 2) - 6 * A + 5) / 2;
+                    tab[n]=(4 * pow(B, 2) - 6 * B + 5) / 2;
 
                     for(i=1; i<n; i++)
                     {
-                        tab[i]=(4*pow(xi[i-1],2.0)-6*xi[i-1]+5);
+                        tab[i]=(4 * pow(xi[i-1], 2) - 6 * xi[i-1] + 5);
                     }
 
                     double suma = 0;
