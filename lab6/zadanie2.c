@@ -32,7 +32,7 @@ int main (int argc, char *argv[])
         switch (pid = fork()) 
         {
             case -1:
-                printf("Error in fork! \n");
+                printf("Wystąpił błąd! \n");
             case 0:
                     H = (B-A)/n;
                     double xi[n-1];
@@ -71,7 +71,7 @@ int main (int argc, char *argv[])
     
     for (int i = 1; i <= liczbaProcesow; i++) 
     {
-        if (wait(0) == -1) printf("Error in wait! \n");
+        if (wait(0) == -1) printf("Wystąpił błąd! \n");
     }
     
     return 0;
