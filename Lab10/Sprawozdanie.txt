@@ -1,0 +1,6 @@
+Zaimplementowałem kody z laboratorium 10, przedmiotu PRiR w środowisku Google Collaborate.
+Kody z zadania pierwszego realizują całkowanie numeryczne metodami: prostokątów, trapezów oraz Simpsona.
+W zadaniu drugim program do interpolacji funkcji, pomyślnie ją interpoluje, zarówno w wariancie 1D, jak i 2D.
+
+W zadaniu trzecim zmodyfikowałem program, modyfikując liczbę neuronów na poszczególnych warstwach w perceptronie, w taki sposób, że wynik straty (loss)
+zmniejszył się, co doprowadziło do ogólnej poprawy modelu.
