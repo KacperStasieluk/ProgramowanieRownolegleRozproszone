@@ -1,0 +1,16 @@
+Podczas pracy, wykorzystałem kod pochodzący ze strony: https://keras.io/examples/generative/neural_style_transfer/
+
+Neural Style Transfer - polega na wygenerowaniu obrazu o tej samej "treści" co obraz bazowy, ale ze "stylem" innego obrazu (zazwyczaj artystycznego).
+Osiąga się to poprzez optymalizację funkcji strat.
+
+Spostrzeżenia, po eksperymentach z algorytmem:
+
+- W obrazie wynikowym ciekawy jest fakt połączenia ciemnych obszarów obrazów wejściowych, tj. jeśli prawy dolny róg pierwszego obrazu wejściowego ma ciemniejsze odcienie, 
+a np. lewy górny róg drugiego obrazu wejściowego również ma ciemniejsze odcienie, to na obrazie wyjściowym, w prawym dolnym rogu zobaczymy ten obszar "stylu" drugiego 
+obrazu wejściowego, który znajdował się w lewym górnym jego rogu.
+
+- Zmiana wyboru warstw w sieci wpłynęła na wyniki na dwa różne sposoby: delikatna zmiana kolorystyki obrazu wyjściowego, oraz zmiana kształtów widocznych na obrazie
+(np. z bardziej "zaokrąglonych" na bardziej "kwadratowe").
+
+- Im bardziej "szczegółowe" są obrazy wejściowe, tym więcej kształtów uzyskamy w obrazie wyjściowym. Dodatkowo, bardziej szczegółowe obszary na pierwszym obrazie wejściowym
+(krzewy, liście, rośliny, trawa) również generują więcej kształtów, a obszary z mniejszą ilością krawędzi wygenerują mniej kształtów.
