@@ -1,0 +1,8 @@
+  Innym ciekawym zastosowaniem biblioteki Tensorflow jest generowanie odręcznie pisanych liczb na podstawie wprowadzonych do programu przykładów za pomocą Deep Convolutional Generative Adversarial Network, z użyciem interfejsu Keras Sequential API. Jest to bardzo ciekawe zostosowanie, bo rozwijając nieco kod, możemy doprowadzić do momentu, że program będzie generował dowolne zdjęcia przedmiotów, zwierząt, ludzkich twarzy, tylko i wyłącznie na podstawie jakiegoś zbioru treningowego. Ciekawym rezultatem zastosowania takiej technologii może być strona www.thispersondoesnotexist.com oraz www.thiscatdoesnotexist.com, które generują odpowiednio zdjęcia ludzkich twarzy (które nie należą do żadnego człowieka) oraz kotów (które nie istnieją). 
+(https://www.tensorflow.org/tutorials/generative/dcgan)
+  
+  Z kolei kolejne zastosowanie Tensorflow to sekwencyjna translacja z języka na język, wykorzystując uczenie maszynowe. Jesteśmy w stanie wtedy rozpoznawać kontekst, składnię oraz oczywiście same słowa. Technologia ta zdecydowanie zbliża nas do uzyskania doskonałego systemu translacji, który będzie w stanie pomóc w porozumiewaniu się wielu ludziom.
+(https://www.tensorflow.org/tutorials/text/nmt_with_attention)
+  
+  Z wykorzystaniem Tensorflow możemy również kategoryzować zdjęcia - chociażby zdjęcia różnych domowych pomieszczeń. W rezultacie program potrafi rozróżnić np. sypialnię od kuchni.
+(https://youtu.be/tPb2u9kwh2w)
